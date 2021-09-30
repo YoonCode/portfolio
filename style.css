@@ -15,6 +15,7 @@
   --color-dark-blue: #1874f0;
   --color-yellow: #fff7d1;
   --color-orange: #feb546;
+  --color-dark-orange: #ff9812;
 
   /* Font size */
   --font-large: 48px;
@@ -108,7 +109,6 @@ p {
 
 #navbar.navbar--dark {
   background-color: var(--color-orange);
-  padding: 8px;
 }
 
 .navbar__logo {
@@ -130,7 +130,7 @@ p {
 
 .navbar__menu__item:hover {
   border: 1px solid var(--color-white);
-  background-color: var(--color-dark-blue);
+  background-color: var(--color-dark-orange);
 }
 
 .navbar__toggle-btn {
@@ -397,12 +397,12 @@ p {
 }
 
 .project__description h3 {
-  color: var(--color-white);
+  color: var(--color-orange);
 }
 
 .project__description h3:after {
   content: "";
-  width: 25px;
+  width: 50px;
   height: 2px;
   background-color: var(--color-white);
   display: block;
@@ -513,13 +513,19 @@ p {
   #navbar {
     flex-direction: column;
     align-items: flex-start;
+    background-color: var(--color-orange);
   }
 
   .navbar__menu {
+    text-align: center;
     flex-direction: column;
     align-items: center;
     width: 100%;
     display: none;
+  }
+
+  .navbar__menu.open {
+    display: block;
   }
 
   .about__majors {
