@@ -555,6 +555,10 @@ p {
     padding-bottom: 40px;
   }
 
+  .home__description {
+    font-size: var(--font-medium);
+  }
+
   .about__majors {
     flex-direction: column;
     margin-top: 30px;
@@ -596,6 +600,10 @@ p {
 
   .testimonial__speech-bubble {
     order: 1;
+  }
+
+  .contact__email {
+    font-size: var(--font-regular);
   }
 
   .arrow-up {
