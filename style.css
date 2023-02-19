@@ -161,7 +161,8 @@ p {
 }
 
 .home__title,
-.home__description {
+.home__description,
+.home__description p {
   color: var(--color-white);
 }
 
@@ -212,17 +213,21 @@ p {
   color: var(--color-light-blue);
 }
 
-.major__icon i {
+.major__icon i,
+.major__icon img {
   transition: all var(--animation-duration) ease;
 }
 
-.major__icon:hover i {
+.major__icon:hover i,
+.major__icon img:hover {
   color: var(--color-pink);
   transform: rotate(-30deg) scale(1.1);
 }
 
 .major__title,
 .major__description {
+  width:170px;
+  margin: 0 auto;
   color: var(--color-dark-grey);
 }
 
@@ -271,6 +276,36 @@ p {
 
 .skillset__title {
   color: var(--color-white);
+}
+
+.tools ul.tools__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tools ul.tools__list li {
+  margin: 8px;
+}
+
+.etc ul.etc__list {
+  text-align: left;
+}
+
+.etc ul.etc__list li {
+  margin-bottom: 4px;
+  padding: 4px 8px;
+  display: inline-block;
+  border-radius: 8px;
+  background: var(--color-orange);
+  color: var(--color-white);
+  font-size: var(--font-micro);
+  transition: all var(--animation-duration) ease-in-out;
+}
+
+.etc ul.etc__list li:hover {
+  background: var(--color-dark-orange);
+  transform: scale(1.1);
 }
 
 .skillset__left {
@@ -457,10 +492,21 @@ p {
 
 .testimonial__speech-bubble p {
   color: var(--color-light-grey);
+  text-align: left;
+}
+
+.testimonial__speech-bubble p.name {
+  font-weight: bold;
+  margin-top: 16px;
+  margin-bottom: 8px;
 }
 
 .testimonial__speech-bubble a {
   color: var(--color-blue);
+}
+
+.testimonial__speech-bubble a:hover {
+  color: var(--color-orange);
 }
 
 /* Contact */
@@ -484,10 +530,12 @@ p {
   margin: 24px 0;
 }
 
+.contact__email a,
 .contact__links i {
   transition: all var(--animation-duration) ease;
 }
 
+.contact__email a:hover,
 .contact__links i:hover {
   transform: scale(1.1);
   color: var(--color-orange);
