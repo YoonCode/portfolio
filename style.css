@@ -210,14 +210,18 @@ p {
   border: 1px solid var(--color-light-blue);
   border-radius: 50%;
   margin-bottom: 16px;
+  color: var(--color-light-blue);
 }
 
+.major__icon i,
 .major__icon img {
   transition: all var(--animation-duration) ease;
 }
 
+.major__icon:hover i,
 .major__icon img:hover {
-  transform: rotate(-30deg) scale(1.2);
+  color: var(--color-pink);
+  transform: rotate(-30deg) scale(1.1);
 }
 
 .major__title,
@@ -282,14 +286,6 @@ p {
 
 .tools ul.tools__list li {
   margin: 8px;
-}
-
-.tools ul.tools__list li img {
-  transition: all var(--animation-duration) ease;
-}
-
-.tools ul.tools__list li img:hover {
-  transform: rotate(-30deg) scale(1.2);
 }
 
 .etc ul.etc__list {
