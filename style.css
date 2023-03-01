@@ -212,17 +212,18 @@ p {
   margin-bottom: 16px;
 }
 
-.major__icon img {
+.major__icon i {
+  color: var(--color-light-blue);
   transition: all var(--animation-duration) ease;
 }
 
-.major__icon img:hover {
+.major__icon i:hover {
+  color: var(--color-pink);
   transform: rotate(-30deg) scale(1.2);
 }
 
 .major__title,
 .major__description {
-  width:170px;
   margin: 0 auto;
   color: var(--color-dark-grey);
 }
